@@ -1,0 +1,47 @@
+.flexy-container {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+.flexy-container-inline {
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+}
+
+/*
+    The items below should always have a parent flex container in order for them to work as expected
+*/
+
+.flexy-row {
+    flex-direction: row;
+}
+
+.flexy-row--reverse {
+    flex-direction: row-reverse;
+}
+
+.flexy-column {
+    flex-direction: column;
+}
+
+.flexy-column--reverse {
+    flex-direction: column-reverse;
+}
+
+.flexy-wrap {
+    -webkit-flex-wrap: wrap; /* Safari */
+    flex-wrap: wrap;
+}
+
+.flexy-nowrap {
+    -webkit-flex-wrap: nowrap; /* Safari */
+    flex-wrap: nowrap;
+}
+
+.flexy-justify {
+
+}
+
+.flexy-item {
+
+}
