@@ -9,27 +9,45 @@
         font-family: Arial;
     }
 
+    h1 {
+        color: #607d8b;
+    }
+
     .flexy-border {
+        text-align: center;
         border: 2px solid black;
+        padding: 5px;
     }
 
     .flexy-stlying {
-        margin: 5px;
+        margin: 0 5px;
         width: 100px;
         height: 100px;
+        text-align: center;
+    }
+
+    .flexy-stlying--no-height {
+        height: initial;
+    }
+
+    .container-large {
+        height: 300px;
     }
 </style>
 <link rel="stylesheet" href="./flexy.css">
 <body>
 <h1>Welcome to <span style="color: #1db41d">flexy</span>, just a fun little light weight dom layout library!</h1>
+
 <hr>
 <h1>Containers</h1>
 <hr>
+
 <h2>Container with items</h2>
 <div class="flexy-container flexy-border">
     <div class="flexy-border flexy-stlying">flex item 1</div>
     <div class="flexy-border flexy-stlying">flex item 2</div>
 </div>
+
 <h2>Inline containers with items</h2>
 <div class="flexy-container-inline flexy-border">
     <div class="flexy-border flexy-stlying">flex item 1</div>
@@ -39,43 +57,50 @@
     <div class="flexy-border flexy-stlying">flex item 1</div>
     <div class="flexy-border flexy-stlying">flex item 2</div>
 </div>
+
 <hr>
 <h1>Rows</h1>
 <hr>
-<h2>Standard flexy row</h2>
+
+<h2>Standard row</h2>
 <div class="flexy-container flexy-row flexy-border">
     <div class="flexy-border flexy-stlying">flex item 1</div>
     <div class="flexy-border flexy-stlying">flex item 2</div>
 </div>
-<h2>Reverse flexy row</h2>
+
+<h2>Reverse row</h2>
 <div class="flexy-container flexy-row--reverse flexy-border">
     <div class="flexy-border flexy-stlying">flex item 1</div>
     <div class="flexy-border flexy-stlying">flex item 2</div>
 </div>
+
 <hr>
 <h1>Columns</h1>
 <hr>
-<h2>Standard flexy column</h2>
+
+<h2>Standard column</h2>
 <div class="flexy-container flexy-column flexy-border">
     <div class="flexy-border flexy-stlying">flex item 1</div>
     <div class="flexy-border flexy-stlying">flex item 2</div>
 </div>
-<h2>Reverse flexy column</h2>
+
+<h2>Reverse column</h2>
 <div class="flexy-container flexy-column--reverse flexy-border">
     <div class="flexy-border flexy-stlying">flex item 1</div>
     <div class="flexy-border flexy-stlying">flex item 2</div>
 </div>
-<h2>Row in column</h2>
 
+<h2>Row in column</h2>
 <div class="flexy-container flexy-column flexy-border">
     <div class="flexy-border">
         flex item 1
-        <div class="flexy-row">
+        <div class="flexy-container flexy-row">
             <div class="flexy-border flexy-stlying">flex item 2</div>
             <div class="flexy-border flexy-stlying">flex item 3</div>
         </div>
     </div>
     <div class="flexy-border flexy-stlying">flex item 4</div>
+    <div class="flexy-border flexy-stlying">flex item 5</div>
 </div>
 
 <h2>Column in row</h2>
@@ -88,9 +113,76 @@
         </div>
     </div>
     <div class="flexy-border flexy-stlying">flex item 4</div>
+    <div class="flexy-border flexy-stlying">flex item 5</div>
 </div>
+
 <hr>
-<h1>Alignment</h1>
+<h1>Horizontal Alignment</h1>
 <hr>
+
+<h2>Justify Left</h2>
+<div class="flexy-container flexy-justify--left flexy-row flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Justify Right</h2>
+<div class="flexy-container flexy-row  flexy-justify--right flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Justify Center</h2>
+<div class="flexy-container flexy-row flexy-justify--center flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Justify Space Between</h2>
+<div class="flexy-container flexy-row flexy-justify--between flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Justify Space Around</h2>
+<div class="flexy-container flexy-row flexy-justify--around flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<hr>
+<h1>Vertical Alignment</h1>
+<hr>
+
+<h2>Align Top</h2>
+<div class="flexy-container flexy-row flexy-align--top flexy-border container-large">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Align Bottom</h2>
+<div class="flexy-container flexy-row flexy-align--bottom flexy-border container-large">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Align Center</h2>
+<div class="flexy-container flexy-row flexy-align--center flexy-border container-large">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Align Basline</h2>
+<div class="flexy-container flexy-row flexy-align--baseline flexy-border container-large">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+
+<h2>Align Stretch</h2>
+<div class="flexy-container flexy-row flexy-align--stretch flexy-border container-large">
+    <div class="flexy-border flexy-stlying flexy-stlying--no-height">flex item 1</div>
+    <div class="flexy-border flexy-stlying flexy-stlying--no-height">flex item 2</div>
+</div>
+
 </body>
 </html>
