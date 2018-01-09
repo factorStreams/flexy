@@ -10,7 +10,7 @@
     }
 
     .flexy-border {
-        border: 1px solid black;
+        border: 2px solid black;
     }
 
     .flexy-stlying {
@@ -21,21 +21,76 @@
 </style>
 <link rel="stylesheet" href="./flexy.css">
 <body>
-    <h1>Welcome to Flexy, just a fun little light weight flex library!</h1>
-    <hr>
-    <h2>Container with items</h2>
-    <div class="flexy-container flexy-border">
-        <div class="flexy-item flexy-border flexy-stlying">flex item 1</div>
-        <div class="flexy-item flexy-border flexy-stlying">flex item 2</div>
+<h1>Welcome to <span style="color: #1db41d">flexy</span>, just a fun little light weight dom layout library!</h1>
+<hr>
+<h1>Containers</h1>
+<hr>
+<h2>Container with items</h2>
+<div class="flexy-container flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<h2>Inline containers with items</h2>
+<div class="flexy-container-inline flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<div class="flexy-container-inline flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<hr>
+<h1>Rows</h1>
+<hr>
+<h2>Standard flexy row</h2>
+<div class="flexy-container flexy-row flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<h2>Reverse flexy row</h2>
+<div class="flexy-container flexy-row--reverse flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<hr>
+<h1>Columns</h1>
+<hr>
+<h2>Standard flexy column</h2>
+<div class="flexy-container flexy-column flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<h2>Reverse flexy column</h2>
+<div class="flexy-container flexy-column--reverse flexy-border">
+    <div class="flexy-border flexy-stlying">flex item 1</div>
+    <div class="flexy-border flexy-stlying">flex item 2</div>
+</div>
+<h2>Row in column</h2>
+
+<div class="flexy-container flexy-column flexy-border">
+    <div class="flexy-border">
+        flex item 1
+        <div class="flexy-row">
+            <div class="flexy-border flexy-stlying">flex item 2</div>
+            <div class="flexy-border flexy-stlying">flex item 3</div>
+        </div>
     </div>
-    <h2>Inline containers with items</h2>
-    <div class="flexy-container-inline flexy-border">
-        <div class="flexy-item flexy-border flexy-stlying">flex item 1</div>
-        <div class="flexy-item flexy-border flexy-stlying">flex item 2</div>
+    <div class="flexy-border flexy-stlying">flex item 4</div>
+</div>
+
+<h2>Column in row</h2>
+<div class="flexy-container flexy-row flexy-border">
+    <div class="flexy-border">
+        flex item 1
+        <div class="flexy-column">
+            <div class="flexy-border flexy-stlying">flex item 2</div>
+            <div class="flexy-border flexy-stlying">flex item 3</div>
+        </div>
     </div>
-    <div class="flexy-container-inline flexy-border">
-        <div class="flexy-item flexy-border flexy-stlying">flex item 1</div>
-        <div class="flexy-item flexy-border flexy-stlying">flex item 2</div>
-    </div>
+    <div class="flexy-border flexy-stlying">flex item 4</div>
+</div>
+<hr>
+<h1>Alignment</h1>
+<hr>
 </body>
 </html>

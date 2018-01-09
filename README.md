@@ -1,5 +1,5 @@
 # flexy
-A slim lightweight flexbox library
+A slim lightweight dom layout library. Currently using flexbox to pave the way forward!
 
 ## Notes
 - This is a work in progress, open to suggestions

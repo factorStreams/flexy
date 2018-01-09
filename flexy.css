@@ -13,18 +13,22 @@
 */
 
 .flexy-row {
+    display: flex;
     flex-direction: row;
 }
 
 .flexy-row--reverse {
+    display: flex;
     flex-direction: row-reverse;
 }
 
 .flexy-column {
+    display: flex;
     flex-direction: column;
 }
 
 .flexy-column--reverse {
+    display: flex;
     flex-direction: column-reverse;
 }
 
