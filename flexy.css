@@ -30,17 +30,6 @@
     flex-direction: column-reverse;
 }
 
-/* Flex Wrap */
-.flexy-wrap {
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.flexy-nowrap {
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-
 /* Horizontal Alignment */
 .flexy-justify--left {
      -webkit-justify-content: flex-start;
@@ -91,4 +80,21 @@
 .flexy-align--stretch {
     -webkit-align-items: stretch;
     align-items: stretch;
+}
+
+
+/* Flex Wrap */
+.flexy-wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flexy-wrap--reverse {
+    -webkit-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.flexy-nowrap {
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
