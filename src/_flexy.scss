@@ -1,0 +1,133 @@
+/* ==== Flexy Elements ==== */
+.flexy-container {
+  @extend %flexy-container;
+}
+
+.flexy-container-inline {
+  @extend %flexy-container-inline
+}
+
+/*
+    The items below should always have a parent flex container in order for them to work as expected
+*/
+
+/* Rows */
+.flexy-row {
+  @extend %flexy-row;
+}
+
+.flexy-row-reverse {
+  @extend %flexy-row-reverse
+}
+
+/* Columns */
+.flexy-column {
+  @extend %flexy-column;
+}
+
+.flexy-column-reverse {
+  @extend %flexy-column-reverse;
+}
+
+/* Horizontal Alignment */
+.flexy-justify {
+  &--left {
+    @extend %flexy-justify--left;
+  }
+
+  &--right {
+    @extend %flexy-justify--right;
+  }
+
+  &--center {
+    @extend %flexy-justify--center;
+  }
+
+  &--between {
+    @extend %flexy-justify--between;
+  }
+
+  &--around {
+    @extend %flexy-justify--around;
+  }
+}
+
+/* Vertical Alignment */
+.flexy-align {
+  &--top {
+    @extend %flexy-align--top;
+  }
+
+  &--bottom {
+    @extend %flexy-align--bottom;
+  }
+
+  &--center {
+    @extend %flexy-align--center;
+  }
+
+  &--baseline {
+    @extend %flexy-align--baseline;
+  }
+
+  &--stretch {
+    @extend %flexy-align--stretch;
+  }
+}
+
+/* Flex Wrap */
+.flexy-wrap {
+  @extend %flexy-wrap;
+}
+
+.flexy-wrap-reverse {
+  @extend %flexy-wrap-reverse;
+}
+
+.flexy-nowrap {
+  @extend %flexy-nowrap;
+}
+
+/* ==== Flexy Items ==== */
+
+.flexy-item {
+  /* Sets default value to be distributed evenly by default*/
+  @extend %flexy-item;
+}
+
+/* Margin */
+.flexy-item-auto {
+  @extend %flexy-item-auto;
+
+  &--left {
+    @extend %flexy-item-auto--left;
+  }
+
+  &--right {
+    @extend %flexy-item-auto--right;
+  }
+}
+
+/* Align Self */
+.flexy-item-align {
+  &--top {
+    @extend %flexy-item-align--top;
+  }
+
+  &--bottom {
+    @extend %flexy-item-align--bottom;
+  }
+
+  &--center {
+    @extend %flexy-item-align--center;
+  }
+
+  &--baseline {
+    @extend %flexy-item-align--baseline;
+  }
+
+  &--stretch {
+    @extend %flexy-item-align--stretch;
+  }
+}
+
