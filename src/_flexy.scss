@@ -107,7 +107,7 @@
 
 .flexy-item {
   /* Sets default value to be distributed evenly by default*/
-  @extend %flexy-item;
+  flex: 1;
 }
 
 /* Margin */
