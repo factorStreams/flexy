@@ -5,7 +5,7 @@ const gulp = require('gulp'),
 
 const gulpConfig = require('./gulp.config').config;
 
-const srcPath = path.join(gulpConfig.basePath, gulpConfig.sassGlob);
+const srcPath = path.resolve(gulpConfig.basePath);
 
 gulp.task('sass', function () {
     return gulp.src(srcPath)
