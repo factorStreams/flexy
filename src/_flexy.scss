@@ -132,17 +132,17 @@
 
 .custom-container {
   div:nth-child(2) {
-    @include flexyItem(5);
+    @include flexy-item(5);
   }
 }
 
 .dashboard {
   div:nth-child(2) {
-    @include flexyItem(8);
+    @include flexy-item(8);
   }
   &__body {
     div:nth-child(2) {
-      @include flexyItem(3);
+      @include flexy-item(3);
     }
   }
 }
