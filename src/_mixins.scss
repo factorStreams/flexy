@@ -1,9 +1,9 @@
-@mixin flexyOrder($order) {
+@mixin flexy-order($order) {
   -webkit-order: $order;
   order: $order;
 }
 
-@mixin flexyItem($amount) {
+@mixin flexy-item($amount: '1') {
   flex: $amount
 }
 
