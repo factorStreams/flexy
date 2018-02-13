@@ -130,6 +130,21 @@
   }
 }
 
+/* Flex Basis */
+.flexy-basis {
+  &--half {
+    @include flexy-basis(50%);
+  }
+
+  &--third {
+    @include flexy-basis(33.333333%);
+  }
+
+  &--quarter {
+    @include flexy-basis(25%);
+  }
+}
+
 .custom-container {
   div:nth-child(2) {
     @include flexy-item(5);

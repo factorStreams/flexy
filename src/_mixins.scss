@@ -132,3 +132,7 @@
     align-items: flex-start;
   }
 }
+
+@mixin flexy-basis($percentage: 100%) {
+  flex-basis: $percentage;
+}
