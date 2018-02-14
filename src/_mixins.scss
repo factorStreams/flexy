@@ -3,7 +3,7 @@
   order: $order;
 }
 
-@mixin flexy-item($amount: '1') {
+@mixin flexy-item($amount: 1) {
   flex: $amount
 }
 
