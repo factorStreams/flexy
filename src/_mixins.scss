@@ -53,8 +53,8 @@
     -webkit-justify-content: space-around;
     justify-content: space-around;
   } @else {
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+    -webkit-justify-content: $direction;
+    justify-content: $direction;
   }
 }
 
@@ -75,8 +75,8 @@
     -webkit-align-items: stretch;
     align-items: stretch;
   } @else {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: $direction;
+    align-items: $direction;
   }
 }
 
@@ -128,8 +128,8 @@
     -webkit-align-self: stretch;
     align-self: stretch;
   } @else {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: $direction;
+    align-items: $direction;
   }
 }
 
