@@ -31,11 +31,11 @@
 
 /* Horizontal Alignment */
 .flexy-justify {
-  &--left {
+  &--start {
     @include flexy-justify('start');
   }
 
-  &--right {
+  &--end {
     @include flexy-justify('end');
   }
 
@@ -54,11 +54,11 @@
 
 /* Vertical Alignment */
 .flexy-align {
-  &--top {
+  &--start {
     @include flexy-align('start');
   }
 
-  &--bottom {
+  &--end {
     @include flexy-align('end');
   }
 
@@ -98,23 +98,23 @@
 .flexy-item-auto {
   @include flexy-item-auto;
 
-  &--left {
+  &--start {
     @include flexy-item-auto('start');
   }
 
-  &--right {
+  &--end {
     @include flexy-item-auto('end');
   }
 }
 
 /* Align Self */
 .flexy-item-align {
-  &--top {
+  &--start {
     @include flexy-item-align('top');
   }
 
-  &--bottom {
-    @include flexy-item-align('bottom');
+  &--end {
+    @include flexy-item-align('end');
   }
 
   &--center {
