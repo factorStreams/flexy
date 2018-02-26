@@ -32,46 +32,46 @@
 /* Horizontal Alignment */
 .flexy-justify {
   &--left {
-    @include flexy-justify(left);
+    @include flexy-justify('start');
   }
 
   &--right {
-    @include flexy-justify(right);
+    @include flexy-justify('end');
   }
 
   &--center {
-    @include flexy-justify(center);
+    @include flexy-justify('center');
   }
 
   &--between {
-    @include flexy-justify(between);
+    @include flexy-justify('between');
   }
 
   &--around {
-    @include flexy-justify(around);
+    @include flexy-justify('around');
   }
 }
 
 /* Vertical Alignment */
 .flexy-align {
   &--top {
-    @include flexy-align(top);
+    @include flexy-align('start');
   }
 
   &--bottom {
-    @include flexy-align(bottom);
+    @include flexy-align('end');
   }
 
   &--center {
-    @include flexy-align(center);
+    @include flexy-align('center');
   }
 
   &--baseline {
-    @include flexy-align(baseline);
+    @include flexy-align('baseline');
   }
 
   &--stretch {
-    @include flexy-align(stretch);
+    @include flexy-align('stretch');
   }
 }
 
@@ -99,34 +99,34 @@
   @include flexy-item-auto;
 
   &--left {
-    @include flexy-item-auto(left);
+    @include flexy-item-auto('start');
   }
 
   &--right {
-    @include flexy-item-auto(right);
+    @include flexy-item-auto('end');
   }
 }
 
 /* Align Self */
 .flexy-item-align {
   &--top {
-    @include flexy-item-align(top);
+    @include flexy-item-align('top');
   }
 
   &--bottom {
-    @include flexy-item-align(bottom);
+    @include flexy-item-align('bottom');
   }
 
   &--center {
-    @include flexy-item-align(center);
+    @include flexy-item-align('center');
   }
 
   &--baseline {
-    @include flexy-item-align(baseline);
+    @include flexy-item-align('baseline');
   }
 
   &--stretch {
-    @include flexy-item-align(stretch);
+    @include flexy-item-align('stretch');
   }
 }
 
