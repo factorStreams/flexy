@@ -128,8 +128,8 @@
     -webkit-align-self: stretch;
     align-self: stretch;
   } @else {
-    -webkit-align-items: $direction;
-    align-items: $direction;
+    -webkit-align-self: $direction;
+    align-self: $direction;
   }
 }
 
