@@ -80,6 +80,7 @@
   }
 }
 
+// TODO: Add examples and class variations
 @mixin flexy-align-content($direction: '') {
   @if ($direction == 'top') {
     -webkit-align-items: flex-start;
