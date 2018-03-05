@@ -31,12 +31,12 @@
 
 /* Alignment */
 .flexy-justify {
-  &--left {
-    @include flexy-justify('left');
+  &--start {
+    @include flexy-justify('start');
   }
 
-  &--right {
-    @include flexy-justify('right');
+  &--end {
+    @include flexy-justify('end');
   }
 
   &--center {
@@ -53,12 +53,12 @@
 }
 
 .flexy-align-items {
-  &--top {
-    @include flexy-align-items('top');
+  &--start {
+    @include flexy-align('start');
   }
 
-  &--bottom {
-    @include flexy-align-items('bottom');
+  &--end {
+    @include flexy-align('end');
   }
 
   &--center {
@@ -97,23 +97,23 @@
 .flexy-item-auto {
   @include flexy-item-auto;
 
-  &--left {
-    @include flexy-item-auto('left');
+  &--start {
+    @include flexy-item-auto('start');
   }
 
-  &--right {
-    @include flexy-item-auto('right');
+  &--end {
+    @include flexy-item-auto('end');
   }
 }
 
 /* Align Self */
 .flexy-align-self {
-  &--top {
-    @include flexy-align-self('top');
+  &--start {
+    @include flexy-item-align('top');
   }
 
-  &--bottom {
-    @include flexy-align-self('bottom');
+  &--end {
+    @include flexy-item-align('end');
   }
 
   &--center {
