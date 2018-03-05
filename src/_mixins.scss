@@ -58,28 +58,6 @@
   }
 }
 
-@mixin flexy-align-items($direction: '') {
-  @if ($direction == 'start') {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-  } @else if ($direction == 'end') {
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
-  } @else if ($direction == 'center') {
-    -webkit-align-items: center;
-    align-items: center;
-  } @else if ($direction == 'baseline') {
-    -webkit-align-items: baseline;
-    align-items: baseline;
-  } @else if ($direction == 'stretch') {
-    -webkit-align-items: stretch;
-    align-items: stretch;
-  } @else {
-    -webkit-align-items: $direction;
-    align-items: $direction;
-  }
-}
-
 // TODO: Add examples and class variations
 @mixin flexy-align-content($direction: '') {
   @if ($direction == 'top') {
