@@ -74,7 +74,28 @@
   }
 }
 
-/* Align Self */
+.flexy-align-content {
+  &--start {
+    @include flexy-align-content('start');
+  }
+
+  &--end {
+    @include flexy-align-content('end');
+  }
+
+  &--center {
+    @include flexy-align-content('center');
+  }
+
+  &--baseline {
+    @include flexy-align-content('baseline');
+  }
+
+  &--stretch {
+    @include flexy-align-content('stretch');
+  }
+}
+
 .flexy-align-self {
   &--start {
     @include flexy-align-self('top');
@@ -99,15 +120,15 @@
 
 /* Flex Wrap */
 .flexy-wrap {
-  @include flexy-wrap;
+  @include flexy-wrap(nowrap);
 }
 
 .flexy-wrap-reverse {
-  @include flexy-wrap-reverse;
+  @include flexy-wrap(wrap-reverse);
 }
 
 .flexy-nowrap {
-  @include flexy-nowrap;
+  @include flexy-wrap;
 }
 
 /* ==== Flexy Items ==== */
@@ -117,19 +138,17 @@
 }
 
 /* Margin */
-.flexy-item-auto {
-  @include flexy-item-auto;
+.flexy-item-margin {
+  @include flexy-item-margin;
 
   &--start {
-    @include flexy-item-auto('start');
+    @include flexy-item-margin('start');
   }
 
   &--end {
-    @include flexy-item-auto('end');
+    @include flexy-item-margin('end');
   }
 }
-
-
 
 /* Flex Basis */
 .flexy-basis {
