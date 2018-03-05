@@ -52,25 +52,25 @@
   }
 }
 
-.flexy-align-content {
+.flexy-align-items {
   &--start {
-    @include flexy-align-content('start');
+    @include flexy-align-items('start');
   }
 
   &--end {
-    @include flexy-align-content('end');
+    @include flexy-align-items('end');
   }
 
   &--center {
-    @include flexy-align-content('center');
+    @include flexy-align-items('center');
   }
 
   &--baseline {
-    @include flexy-align-content('baseline');
+    @include flexy-align-items('baseline');
   }
 
   &--stretch {
-    @include flexy-align-content('stretch');
+    @include flexy-align-items('stretch');
   }
 }
 

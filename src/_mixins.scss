@@ -59,8 +59,7 @@
   }
 }
 
-// TODO: Add examples and class variations
-@mixin flexy-align-content($direction: '') {
+@mixin flexy-align-items($direction: '') {
   @if ($direction == 'top') {
     -webkit-align-items: flex-start;
     align-items: flex-start;
@@ -79,6 +78,29 @@
   } @else {
     -webkit-align-items: flex-start;
     align-items: flex-start;
+  }
+}
+
+// TODO: Add examples and class variations
+@mixin flexy-align-content($direction: '') {
+  @if ($direction == 'top') {
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+  } @else if ($direction == 'bottom') {
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+  } @else if ($direction == 'center') {
+    -webkit-align-content: center;
+    align-content: center;
+  } @else if ($direction == 'baseline') {
+    -webkit-align-content: baseline;
+    align-content: baseline;
+  } @else if ($direction == 'stretch') {
+    -webkit-align-content: stretch;
+    align-content: stretch;
+  } @else {
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
   }
 }
 
