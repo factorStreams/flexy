@@ -31,11 +31,11 @@
   flex-direction: column;
 }
 
-/* Alignment */
 @mixin flexy-column-reverse {
   flex-direction: column-reverse;
 }
 
+/* Alignment */
 @mixin flexy-justify($direction: '') {
   @if ($direction == 'left') {
     -webkit-justify-content: flex-start;
@@ -58,7 +58,7 @@
   }
 }
 
-@mixin flexy-align($direction: '') {
+@mixin flexy-align-items($direction: '') {
   @if ($direction == 'top') {
     -webkit-align-items: flex-start;
     align-items: flex-start;
@@ -80,6 +80,49 @@
   }
 }
 
+@mixin flexy-align-content($direction: '') {
+  @if ($direction == 'top') {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  } @else if ($direction == 'bottom') {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  } @else if ($direction == 'center') {
+    -webkit-align-items: center;
+    align-items: center;
+  } @else if ($direction == 'baseline') {
+    -webkit-align-items: baseline;
+    align-items: baseline;
+  } @else if ($direction == 'stretch') {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  } @else {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@mixin flexy-align-self($direction: '') {
+  @if ($direction == 'top') {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+  } @else if ($direction == 'bottom') {
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+  } @else if ($direction == 'center') {
+    -webkit-align-self: center;
+    align-self: center;
+  } @else if ($direction == 'baseline') {
+    -webkit-align-self: baseline;
+    align-self: baseline;
+  } @else if ($direction == 'stretch') {
+    -webkit-align-self: stretch;
+    align-self: stretch;
+  } @else {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+}
 /* Wrapping */
 @mixin flexy-wrap {
   -webkit-flex-wrap: wrap;
@@ -108,28 +151,6 @@
     margin-right: auto;
   } @else {
     margin: auto;
-  }
-}
-
-@mixin flexy-item-align($direction: '') {
-  @if ($direction == 'top') {
-    -webkit-align-self: flex-start;
-    align-self: flex-start;
-  } @else if ($direction == 'bottom') {
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
-  } @else if ($direction == 'center') {
-    -webkit-align-self: center;
-    align-self: center;
-  } @else if ($direction == 'baseline') {
-    -webkit-align-self: baseline;
-    align-self: baseline;
-  } @else if ($direction == 'stretch') {
-    -webkit-align-self: stretch;
-    align-self: stretch;
-  } @else {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
   }
 }
 

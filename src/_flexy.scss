@@ -29,7 +29,7 @@
   @include flexy-column-reverse;
 }
 
-/* Horizontal Alignment */
+/* Alignment */
 .flexy-justify {
   &--left {
     @include flexy-justify('left');
@@ -52,26 +52,25 @@
   }
 }
 
-/* Vertical Alignment */
-.flexy-align {
+.flexy-align-items {
   &--top {
-    @include flexy-align('top');
+    @include flexy-align-items('top');
   }
 
   &--bottom {
-    @include flexy-align('bottom');
+    @include flexy-align-items('bottom');
   }
 
   &--center {
-    @include flexy-align('center');
+    @include flexy-align-items('center');
   }
 
   &--baseline {
-    @include flexy-align('baseline');
+    @include flexy-align-items('baseline');
   }
 
   &--stretch {
-    @include flexy-align('stretch');
+    @include flexy-align-items('stretch');
   }
 }
 
@@ -108,25 +107,25 @@
 }
 
 /* Align Self */
-.flexy-item-align {
+.flexy-align-self {
   &--top {
-    @include flexy-item-align('top');
+    @include flexy-align-self('top');
   }
 
   &--bottom {
-    @include flexy-item-align('bottom');
+    @include flexy-align-self('bottom');
   }
 
   &--center {
-    @include flexy-item-align('center');
+    @include flexy-align-self('center');
   }
 
   &--baseline {
-    @include flexy-item-align('baseline');
+    @include flexy-align-self('baseline');
   }
 
   &--stretch {
-    @include flexy-item-align('stretch');
+    @include flexy-align-self('stretch');
   }
 }
 
