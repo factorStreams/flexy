@@ -170,14 +170,3 @@
     @include flexy-item(5);
   }
 }
-
-.dashboard {
-  div:nth-child(2) {
-    @include flexy-item(8);
-  }
-  &__body {
-    div:nth-child(2) {
-      @include flexy-item(3);
-    }
-  }
-}
