@@ -98,7 +98,7 @@
 
 .flexy-align-self {
   &--start {
-    @include flexy-align-self('top');
+    @include flexy-align-self('start');
   }
 
   &--end {

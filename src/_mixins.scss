@@ -50,10 +50,10 @@
 }
 
 @mixin flexy-align-items($direction: '') {
-  @if ($direction == 'top') {
+  @if ($direction == 'start') {
     -webkit-align-items: flex-start;
     align-items: flex-start;
-  } @else if ($direction == 'bottom') {
+  } @else if ($direction == 'end') {
     -webkit-align-items: flex-end;
     align-items: flex-end;
   } @else if ($direction == 'center') {
@@ -95,10 +95,10 @@
 }
 
 @mixin flexy-align-self($direction: '') {
-  @if ($direction == 'top') {
+  @if ($direction == 'start') {
     -webkit-align-self: flex-start;
     align-self: flex-start;
-  } @else if ($direction == 'bottom') {
+  } @else if ($direction == 'end') {
     -webkit-align-self: flex-end;
     align-self: flex-end;
   } @else if ($direction == 'center') {
