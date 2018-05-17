@@ -117,7 +117,7 @@
 }
 
 /* Wrapping */
-@mixin flexy-wrap($wrapType: 'nowrap') {
+@mixin flexy-wrap($wrapType: nowrap) {
   -webkit-flex-wrap: $wrapType;
   flex-wrap: $wrapType;
 }

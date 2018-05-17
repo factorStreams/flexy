@@ -120,7 +120,7 @@
 
 /* Flex Wrap */
 .flexy-wrap {
-  @include flexy-wrap(nowrap);
+  @include flexy-wrap(wrap);
 }
 
 .flexy-wrap-reverse {

@@ -1,6 +1,6 @@
 {
   "name": "flexy",
-  "version": "3.0.0",
+  "version": "1.0.1",
   "description": "A simple class utility library for Flexbox",
   "main": "app.js",
   "repository": "https://github.com/factordog/flexy.git",
