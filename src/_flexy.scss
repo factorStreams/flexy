@@ -50,6 +50,10 @@
   &--around {
     @include flexy-justify('around');
   }
+
+  &--even {
+    @include flexy-justify('even');
+  }
 }
 
 .flexy-align-items {

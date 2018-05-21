@@ -43,6 +43,9 @@
   } @else if ($direction == 'around') {
     -webkit-justify-content: space-around;
     justify-content: space-around;
+  } @else if ($direction == 'even') {
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
   } @else {
     -webkit-justify-content: $direction;
     justify-content: $direction;
