@@ -131,10 +131,12 @@
 @mixin flexy-item-margin($direction: '') {
   @if ($direction == 'auto') {
     margin: auto;
-  } @else if ($direction == 'left') {
-    margin-left: auto;
-  } @else if ($direction == 'right') {
+  } @else if ($direction == 'start') {
+    margin-left: 0;
     margin-right: auto;
+  } @else if ($direction == 'end') {
+    margin-right: 0;
+    margin-left: auto;
   } @else {
     margin: auto;
   }
