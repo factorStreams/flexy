@@ -69,8 +69,8 @@
     -webkit-align-items: stretch;
     align-items: stretch;
   } @else {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
   }
 }
 
