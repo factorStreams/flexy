@@ -1,6 +1,6 @@
 {
   "name": "flexy",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple class utility library for Flexbox",
   "main": "app.js",
   "repository": "https://github.com/factordog/flexy.git",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.1"
   },
   "dependencies": {
     "path": "^0.12.7"

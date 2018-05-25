@@ -128,7 +128,7 @@
 /* ==== Flexy Items ==== */
 
 /* Margin */
-@mixin flexy-item-margin($direction: '') {
+@mixin flexy-margin($direction: '') {
   @if ($direction == 'auto') {
     margin: auto;
   } @else if ($direction == 'start') {
@@ -156,4 +156,7 @@
   order: $order;
 }
 
-
+/* Flex Shrink */
+@mixin flexy-shrink($amount: 1) {
+  flex-shrink: $amount;
+}

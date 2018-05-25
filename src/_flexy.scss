@@ -139,18 +139,19 @@
 .flexy-item {
   /* Sets default value to be distributed evenly by default*/
   flex: 1;
+  background:red;
 }
 
 /* Margin */
-.flexy-item-margin {
-  @include flexy-item-margin;
+.flexy-margin {
+  @include flexy-margin;
 
   &--start {
-    @include flexy-item-margin('start');
+    @include flexy-margin('start');
   }
 
   &--end {
-    @include flexy-item-margin('end');
+    @include flexy-margin('end');
   }
 }
 
@@ -169,8 +170,11 @@
   }
 }
 
-.custom-container {
-  div:nth-child(2) {
-    @include flexy-item(5);
+/* Flex Shrink */
+.flexy-shrink {
+  @include flexy-shrink(1);
+  
+  &--none {
+    @include flexy-shrink(0);
   }
 }
