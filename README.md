@@ -1,7 +1,11 @@
-# flexy
-A slim lightweight dom layout library. Currently using flexbox to pave the way forward!
+# Flexy (2.0.0)
+A slim lightweight Flexbox utility layout library.
 
 ## Notes
-- This is a work in progress, open to suggestions
-- This is not a grid system, just a smiple library to easily add on flexbox properties to your html that I felt like I needed when starting projects.
-- Once this is fully completed I will update to a SASS version with minified and originals. This is currently a playground.
+- This is not meant to be like a Bootstrap/Foundation grid system
+- This offers quick and easy SCSS classes and mixins to create features and layout quickly and easily (The styling is up to you).
+- Requires a decent understanding of CSS Flexbox
+- Some helpful learning paths:
+    - https://codeburst.io/a-simple-cheatsheet-for-flexbox-f5d3e1658447?imm_mid=0f59e2&cmp=em-web-na-na-newsltr_20170823
+    - https://codepen.io/enxaneta/full/adLPwv
+
