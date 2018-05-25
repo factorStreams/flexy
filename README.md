@@ -13,13 +13,13 @@ A slim lightweight Flexbox utility layout library.
 
 ## Getting Started:
 
-# As a dependency:
+### As a dependency:
 - Clone Down repo (git clone https://github.com/factordog/flexy.git)
 - If using webpack:
     - @import ~flexy/styles
 - If relative path:
     - @import ./<path>/flexy/styles
 
-# To Edit:
+### To Edit:
 - Clone Down repo (git clone https://github.com/factordog/flexy.git)
 - npm run/yarn dev
