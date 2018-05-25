@@ -6,6 +6,9 @@
   "repository": "https://github.com/factordog/flexy.git",
   "author": "Luke Babich",
   "license": "MIT",
+  "scripts": {
+    "dev": "gulp sass:watch"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
