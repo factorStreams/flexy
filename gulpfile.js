@@ -1,18 +1,4 @@
-'use strict';
 const gulp = require('gulp'),
-    gulpSass = require('gulp-sass'),
-    path = require('path');
+    taskRegistry = require('./gulp/taskRegistry');
 
-const gulpConfig = require('./gulp.config').config;
-
-const srcPath = path.resolve(gulpConfig.basePath);
-
-gulp.task('sass', function () {
-    return gulp.src(srcPath)
-        .pipe(gulpSass({outputStyle: 'compressed'}).on('error', gulpSass.logError))
-        .pipe(gulp.dest(gulpConfig.buildPath));
-});
-
-gulp.task('sass:watch', function () {
-    gulp.watch('./src/**/*.scss', ['sass']);
-});
+taskRegistry(gulp);

@@ -1,5 +1,5 @@
-# Flexy (2.0.0)
-A slim lightweight Flexbox utility layout library.
+# Flexy
+A slim lightweight Flexbox utility layout library (Or a cool acronym FULL, totally intentional).
 
 ## Notes:
 - This is not meant to be like a Bootstrap/Foundation grid system
@@ -13,13 +13,13 @@ A slim lightweight Flexbox utility layout library.
 
 ## Getting Started:
 
-### As a dependency:
-- Clone Down repo (git clone https://github.com/factordog/flexy.git)
-- If using webpack:
-    - @import ~flexy/styles
-- If relative path:
-    - @import ./<path>/flexy/styles
+###Installation
+`npm install flexy-ui`
+`yarn add flexy-ui`
 
-### To Edit:
-- Clone Down repo (git clone https://github.com/factordog/flexy.git)
-- npm run/yarn dev
+### How to Use:
+#### If using webpack:
+    - @import ~flexy/styles
+#### If relative path:
+    - @import ./<path>/flexy/styles
+*Note: You can also edit you build alias resolution to do a straight @import 'flexy-ui'*
