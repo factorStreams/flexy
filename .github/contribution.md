@@ -1,8 +1,6 @@
 # Contribution Guide:
 ## Logging an Issue
 - Reason for opening
-- Type of issue
-- Issue Title
 - Version Number
 - Steps to reproduce
 - What is expected
