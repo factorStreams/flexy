@@ -1,5 +1,5 @@
 {
-  "name": "flexy",
+  "name": "flexy-ui",
   "version": "2.0.1",
   "description": "A simple class utility library for Flexbox",
   "main": "app.js",
