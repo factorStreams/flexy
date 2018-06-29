@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "iojs"
   - "8"
 before_script:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.7.0
@@ -8,4 +7,4 @@ before_script:
   - npm install -g gulp-cli
 cache:
   yarn: true
-script: gulp
+script: yarn start
