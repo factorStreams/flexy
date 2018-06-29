@@ -7,7 +7,7 @@
   "author": "Luke Babich",
   "license": "MIT",
   "scripts": {
-    "build": "gulp sass",
+    "start": "gulp sass",
     "dev": "gulp sass:watch"
   },
   "devDependencies": {
