@@ -27,5 +27,9 @@ A slim lightweight Flexbox utility layout library (Or a cool acronym FULL, total
 Once you have imported the library at your required level it becomes as easy as using normal classes on your HTML,
 or using `@include` to use a mixin.
 
+Run:
+`yarn start` to compile all SASS to css.
+`yarn dev` to work in development mode and have it compile sass on change.
+
 # Contribution Guide:
 Found [here](https://github.com/factordog/flexy/blob/master/.github/contribution.md)
