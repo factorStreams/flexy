@@ -18,6 +18,8 @@ A slim lightweight Flexbox utility layout library (Or a cool acronym FULL, total
 `yarn add flexy-ui`
 
 ### How to Use:
+#### Documentation
+https://github.com/factordog/flexy/wiki/General-Classes-and-Mixins
 #### If using webpack:
     - @import ~flexy/src/styles
 #### If relative path:
